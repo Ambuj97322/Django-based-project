@@ -1,18 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  {% load static %}
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Render</title>
-  <link rel="stylesheet" href="{% static '../static/css/index.css' %}">
-</head>
-<body>
+{% include 'header.html' %}
+
+{% load static %}
   {% if a == 10 %}
   <h1> It's me </h1>
   {% else %}
   <h1> Hello </h1>
   {% endif %}
   <img src="{% static '../static/img/sedan.jpg' %}" alt="">
-</body>
-</html>
+{% include 'footer.html' %}
