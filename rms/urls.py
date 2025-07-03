@@ -24,4 +24,5 @@ urlpatterns = [
     path('length/<str:string>',views.length),
     path('find/<str:string>/<str:char>',views.find),
     path('index/<int:a>',views.indexvw),
+    path('a',views.avw),
 ]

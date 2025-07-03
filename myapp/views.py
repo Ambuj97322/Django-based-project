@@ -28,3 +28,6 @@ def find(request,string,char):
 def indexvw(request,a):
     print(a)
     return render(request,'index.html',{'a':a})
+
+def avw(request):
+    return render(request,'a.html')
